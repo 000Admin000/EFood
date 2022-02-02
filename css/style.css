@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	color: #363853;
+	background: #F9FAFF;
+	line-height: 1;
+	font-family: 'Rubik', sans-serif;
+}
+.block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.wrapper {
+	min-width: 100%;
+	/* overflow: hidden; */
+}
+.conteiner {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+.text-select {
+	color: #FF7A50;
+}
+button {
+	font-family: 'Rubik', sans-serif;
+	color: #363853;
+}
+.btn {
+	background: #FF7A50;
+	box-shadow: 0px 22px 40px rgba(255, 104, 56, 0.19);
+	border-radius: 5px;
+	transition: 0.3s;
+}
+.btn:active {
+	transition: 0.3s;
+	transform: scale(0.9);
+}
+.btn:hover {
+	background: #e48e3e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
