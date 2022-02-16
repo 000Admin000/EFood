@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EFood - Меню</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../img/efoodLogo.png" type="image/png">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/main-catalog.css">
+	<link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+
+
+
+  
+<div class="wrapper">
+	<header class="header">
+		<div class="header-menu">
+			<div class="menu conteiner" id="menu">
+				<div class="menu-logo">
+					<div class="logo-block"><a href="/"><img src="../img/EFood.svg" alt="logo"></a></div>
+				</div>
+				<div class="menu-list">
+					<input type="checkbox" id="checkbox-menu">
+					<label class="burger-menu" id="checkbox-label" for="checkbox-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+					<ul class="menu-list-1" id="menu-list">
+						<li class="menu-item">
+							<a href="/" class="menu-link ">Головна</a>
+						</li>
+						<li class="menu-item active">
+							<a href="../templates/catalog.html" class="menu-link">Меню</a>
+						</li>
+						<li class="menu-item">
+							<a href="../templates/about.html" class="menu-link">Про нас</a>
+						</li>
+						<li class="menu-item">
+							<a href="../templates/contact.html" class="menu-link">Контакти</a>
+						</li>
+					</ul>
+					<ul class="menu-list-2">
+						<li class="menu-item search">
+							<img src="../img/search.svg" alt="">
+						</li>
+						<li class="menu-item shop">
+							<img src="../img/shop.svg" alt="">
+							<span>0</span>
+						</li>
+					</ul>
+					
+						
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
+
+
+<main class="main">
+	<div class="block-wrap">
+		<div class="block-inner block-direction-2 conteiner">
+			<h1 class="bl-2-title">Оберіть <span class="text-select">Категорію</span></h1>
+
+			<div class="food-slider" id="slider">
+
+				<!-- <div class="block-2-select"> -->
+				
+					<input class="radio-btn" type="radio" id="checkbox-1" name="input" checked><label class="bl-2-select-btn select-1" for="checkbox-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill=""><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M481.9 270.1C490.9 279.1 496 291.3 496 304C496 316.7 490.9 328.9 481.9 337.9C472.9 346.9 460.7 352 448 352H64C51.27 352 39.06 346.9 30.06 337.9C21.06 328.9 16 316.7 16 304C16 291.3 21.06 279.1 30.06 270.1C39.06 261.1 51.27 256 64 256H448C460.7 256 472.9 261.1 481.9 270.1zM475.3 388.7C478.3 391.7 480 395.8 480 400V416C480 432.1 473.3 449.3 461.3 461.3C449.3 473.3 432.1 480 416 480H96C79.03 480 62.75 473.3 50.75 461.3C38.74 449.3 32 432.1 32 416V400C32 395.8 33.69 391.7 36.69 388.7C39.69 385.7 43.76 384 48 384H464C468.2 384 472.3 385.7 475.3 388.7zM50.39 220.8C45.93 218.6 42.03 215.5 38.97 211.6C35.91 207.7 33.79 203.2 32.75 198.4C31.71 193.5 31.8 188.5 32.99 183.7C54.98 97.02 146.5 32 256 32C365.5 32 457 97.02 479 183.7C480.2 188.5 480.3 193.5 479.2 198.4C478.2 203.2 476.1 207.7 473 211.6C469.1 215.5 466.1 218.6 461.6 220.8C457.2 222.9 452.3 224 447.3 224H64.67C59.73 224 54.84 222.9 50.39 220.8zM372.7 116.7C369.7 119.7 368 123.8 368 128C368 131.2 368.9 134.3 370.7 136.9C372.5 139.5 374.1 141.6 377.9 142.8C380.8 143.1 384 144.3 387.1 143.7C390.2 143.1 393.1 141.6 395.3 139.3C397.6 137.1 399.1 134.2 399.7 131.1C400.3 128 399.1 124.8 398.8 121.9C397.6 118.1 395.5 116.5 392.9 114.7C390.3 112.9 387.2 111.1 384 111.1C379.8 111.1 375.7 113.7 372.7 116.7V116.7zM244.7 84.69C241.7 87.69 240 91.76 240 96C240 99.16 240.9 102.3 242.7 104.9C244.5 107.5 246.1 109.6 249.9 110.8C252.8 111.1 256 112.3 259.1 111.7C262.2 111.1 265.1 109.6 267.3 107.3C269.6 105.1 271.1 102.2 271.7 99.12C272.3 96.02 271.1 92.8 270.8 89.88C269.6 86.95 267.5 84.45 264.9 82.7C262.3 80.94 259.2 79.1 256 79.1C251.8 79.1 247.7 81.69 244.7 84.69V84.69zM116.7 116.7C113.7 119.7 112 123.8 112 128C112 131.2 112.9 134.3 114.7 136.9C116.5 139.5 118.1 141.6 121.9 142.8C124.8 143.1 128 144.3 131.1 143.7C134.2 143.1 137.1 141.6 139.3 139.3C141.6 137.1 143.1 134.2 143.7 131.1C144.3 128 143.1 124.8 142.8 121.9C141.6 118.1 139.5 116.5 136.9 114.7C134.3 112.9 131.2 111.1 128 111.1C123.8 111.1 119.7 113.7 116.7 116.7L116.7 116.7z"/></svg>Бургер</label>
+					<input class="radio-btn" type="radio" id="checkbox-2" name="input"><label class="bl-2-select-btn select-2" for="checkbox-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M100.4 112.3L.5101 491.7c-1.375 5.625 .1622 11.6 4.287 15.6c4.127 4.125 10.13 5.744 15.63 4.119l379.1-105.1C395.3 231.4 276.5 114.1 100.4 112.3zM127.1 416c-17.62 0-32-14.38-32-31.1c0-17.62 14.39-32 32.01-32c17.63 0 32 14.38 32 31.1C160 401.6 145.6 416 127.1 416zM175.1 271.1c-17.63 0-32-14.38-32-32c0-17.62 14.38-31.1 32-31.1c17.62 0 32 14.38 32 31.1C208 257.6 193.6 271.1 175.1 271.1zM272 367.1c-17.62 0-32-14.38-32-31.1c0-17.62 14.38-32 32-32c17.63 0 32 14.38 32 32C304 353.6 289.6 367.1 272 367.1zM158.9 .1406c-16.13-1.5-31.25 8.501-35.38 24.12L108.7 80.52c187.6 5.5 314.5 130.6 322.5 316.1l56.88-15.75c15.75-4.375 25.5-19.62 23.63-35.87C490.9 165.1 340.8 17.39 158.9 .1406z"/></svg>Піца</label>
+					<input class="radio-btn" type="radio" id="checkbox-3" name="input"><label class="bl-2-select-btn select-3" for="checkbox-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M488.6 23.44c-31.06-31.19-81.76-31.16-112.8 .0313L24.46 374.8c-20.83 19.96-29.19 49.66-21.83 77.6c7.36 27.94 29.07 49.65 57.02 57.01c27.94 7.36 57.64-1 77.6-21.83l351.3-351.3C519.7 105.2 519.8 54.5 488.6 23.44zM438.8 118.4c-19.59 19.59-37.39 22.52-51.74 25.01c-12.97 2.246-22.33 3.867-34.68 16.22c-12.35 12.35-13.97 21.71-16.22 34.69c-2.495 14.35-5.491 32.19-25.08 51.78c-19.59 19.59-37.43 22.58-51.78 25.08C246.3 273.4 236.9 275.1 224.6 287.4c-12.35 12.35-13.97 21.71-16.22 34.68C205.9 336.4 202.9 354.3 183.3 373.9c-19.59 19.59-37.43 22.58-51.78 25.08C118.5 401.2 109.2 402.8 96.83 415.2c-6.238 6.238-16.34 6.238-22.58 0c-6.238-6.238-6.238-16.35 0-22.58c19.59-19.59 37.43-22.58 51.78-25.07c12.97-2.245 22.33-3.869 34.68-16.22c12.35-12.35 13.97-21.71 16.22-34.69c2.495-14.35 5.492-32.19 25.08-51.78s37.43-22.58 51.78-25.08c12.97-2.246 22.33-3.869 34.68-16.22s13.97-21.71 16.22-34.68c2.495-14.35 5.492-32.19 25.08-51.78c19.59-19.59 37.43-22.58 51.78-25.07c12.97-2.246 22.28-3.815 34.63-16.17c6.238-6.238 16.36-6.238 22.59 0C444.1 102.1 444.1 112.2 438.8 118.4zM32.44 321.5l290-290l-11.48-11.6c-24.95-24.95-63.75-26.57-86.58-3.743L17.1 223.4C-5.73 246.3-4.108 285.1 20.84 310L32.44 321.5zM480.6 189.5l-290 290l11.48 11.6c24.95 24.95 63.75 26.57 86.58 3.743l207.3-207.3c22.83-22.83 21.21-61.63-3.743-86.58L480.6 189.5z"/></svg>Cендвіч</label>
+					<input class="radio-btn" type="radio" id="checkbox-4" name="input"><label class="bl-2-select-btn select-4" for="checkbox-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M288 464H240v-125.3l168.8-168.7C424.3 154.5 413.3 128 391.4 128H24.63C2.751 128-8.249 154.5 7.251 170l168.7 168.7V464H128c-17.67 0-32 14.33-32 32c0 8.836 7.164 16 15.1 16h191.1c8.836 0 15.1-7.164 15.1-16C320 478.3 305.7 464 288 464zM432 0c-62.63 0-115.4 40.25-135.1 96h52.5c16.62-28.5 47.25-48 82.62-48c52.88 0 95.1 43 95.1 96s-43.12 96-95.1 96c-14 0-27.25-3.25-39.37-8.625l-35.25 35.25c21.88 13.25 47.25 21.38 74.62 21.38c79.5 0 143.1-64.5 143.1-144S511.5 0 432 0z"/></svg>Лимонад</label>
+					<input class="radio-btn" type="radio" id="checkbox-5" name="input"><label class="bl-2-select-btn select-5" for="checkbox-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 32H120c-13.25 0-24 10.75-24 24L96.01 288c0 53 43 96 96 96h192C437 384 480 341 480 288h32c70.63 0 128-57.38 128-128S582.6 32 512 32zM512 224h-32V96h32c35.25 0 64 28.75 64 64S547.3 224 512 224zM560 416h-544C7.164 416 0 423.2 0 432C0 458.5 21.49 480 48 480h480c26.51 0 48-21.49 48-48C576 423.2 568.8 416 560 416z"/></svg>Кава</label>
+		
+				<!-- </div> -->
+						
+				<div class="food-slider-bl f-1" id="slider-bl">
+
+					<div class="food-bl">
+						<img src="../img/burger2.jpg" alt="burger1" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Роял Бекон</h3>
+						<p class="food-price">₴275</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/burger3.jpg" alt="burger2" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">МакЧікен Бекон</h3>
+						<p class="food-price">₴260</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/burger4.jpg" alt="burger3" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Біг Мак</h3>
+						<p class="food-price">₴300</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/burger5.jpg" alt="burger4" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Біг Тейсті</h3>
+						<p class="food-price">₴285</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/burger6.jpg" alt="burger5" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">МакЧікен Прем'єр</h3>
+						<p class="food-price">₴270</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/burger7.jpg" alt="burger6" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Роял Чізбургер</h3>
+						<p class="food-price">₴265</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+					<div class="food-bl">
+						<img src="../img/burger8.jpg" alt="burger7" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Дабл Роял Чізбургер</h3>
+						<p class="food-price">₴280</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+					<div class="food-bl">
+						<img src="../img/burger9.jpg" alt="burger8" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Дабл Чізбургер</h3>
+						<p class="food-price">₴250</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+					<div class="food-bl">
+						<img src="../img/burger10.jpg" alt="burger9" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Чізбургер</h3>
+						<p class="food-price">₴235</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+					<div class="food-bl">
+						<img src="../img/burger11.jpg" alt="burger10" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Чізбургер з беконом</h3>
+						<p class="food-price">₴245</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+					<div class="food-bl">
+						<img src="../img/burger12.jpg" alt="burger11" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Гамбургер</h3>
+						<p class="food-price">₴250</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+					<div class="food-bl">
+						<img src="../img/burger13.jpg" alt="burger12" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Філе-о-фіш</h3>
+						<p class="food-price">₴260</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+				</div>
+				
+				<div class="food-slider-bl f-2" id="slider-bl">
+
+					<div class="food-bl">
+						<img src="../img/pizza1.jpg" alt="pizza1" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца Гавайська</h3>
+						<p class="food-price">₴160</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/pizza2.jpg" alt="pizza2" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца Чікен Ранч</h3>
+						<p class="food-price">₴170</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/pizza3.jpg" alt="pizza3" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца Куряча</h3>
+						<p class="food-price">₴195</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/pizza4.jpg" alt="pizza4" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца Фірмова</h3>
+						<p class="food-price">₴205</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/pizza5.jpg" alt="pizza5" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца Пеппероні</h3>
+						<p class="food-price">₴210</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/pizza6.jpg" alt="pizza6" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца Супрім</h3>
+						<p class="food-price">₴205</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/pizza7.jpg" alt="pizza7" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца Сицилійська</h3>
+						<p class="food-price">₴175</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/pizza8.jpg" alt="pizza8" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца Мега Міт</h3>
+						<p class="food-price">₴205</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/pizza9.jpg" alt="pizza9" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца Марінара</h3>
+						<p class="food-price">₴245</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/pizza10.jpg" alt="pizza10" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца Сільська</h3>
+						<p class="food-price">₴195</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+					<div class="food-bl">
+						<img src="../img/pizza11.jpg" alt="pizza11" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца Баварська</h3>
+						<p class="food-price">₴195</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/pizza12.jpg" alt="pizza12" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца 4 сезони</h3>
+						<p class="food-price">₴195</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/pizza13.jpg" alt="pizza13" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца 4 м'яса</h3>
+						<p class="food-price">₴195</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/pizza14.jpg" alt="pizza14" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Піца Дьябло</h3>
+						<p class="food-price">₴195</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+
+
+				</div>
+
+				<div class="food-slider-bl f-3" id="slider-bl">
+
+					<div class="food-bl">
+						<img src="../img/sandwich1.jpg" alt="sandwich1" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">СЕНДВІЧ 'ГАВАЇ'</h3>
+						<p class="food-price">₴250</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/sandwich2.jpg" alt="sandwich2" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">СЕНДВІЧ 'ДРЕЗДЕН'</h3>
+						<p class="food-price">₴250</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/sandwich3.jpg" alt="sandwich3" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">СЕНДВІЧ 'ЛІОН'</h3>
+						<p class="food-price">₴250</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/sandwich4.jpg" alt="sandwich4" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">СЕНДВІЧ 'МЮНХЕН'</h3>
+						<p class="food-price">₴250</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+					<div class="food-bl">
+						<img src="../img/sandwich5.jpg" alt="sandwich5" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">СЕНДВІЧ 'НЬЮ-ЙОРК'</h3>
+						<p class="food-price">₴310</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/sandwich6.jpg" alt="sandwich6" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">СЕНДВІЧ 'ТЕХАС'</h3>
+						<p class="food-price">₴310</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/sandwich7.jpg" alt="sandwich7" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">СЕНДВІЧ 'СЕУЛ'</h3>
+						<p class="food-price">₴310</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/sandwich8.jpg" alt="sandwich8" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">СЕНДВІЧ 'ГАМБУРГ'</h3>
+						<p class="food-price">₴310</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/sandwich9.jpg" alt="sandwich9" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">СЕНДВІЧ 'ПАЛЕРМО'</h3>
+						<p class="food-price">₴310</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+					<div class="food-bl">
+						<img src="../img/sandwich10.jpg" alt="sandwich10" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">ПОЛУСЕНДВІЧ 'ГАМБУРГ'</h3>
+						<p class="food-price">₴160</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/sandwich11.jpg" alt="sandwich11" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">ПОЛУСЕНДВІЧ 'ПАЛЕРМО'</h3>
+						<p class="food-price">₴160</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/sandwich12.jpg" alt="sandwich12" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">ПОЛУСЕНДВІЧ 'СЕУЛ'</h3>
+						<p class="food-price">₴160</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/sandwich13.jpg" alt="sandwich13" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">ПОЛУСЕНДВІЧ 'ТЕХАС'</h3>
+						<p class="food-price">₴160</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+				</div>
+
+				<div class="food-slider-bl f-4" id="slider-bl">
+
+					<div class="food-bl">
+						<img src="../img/lemonade1.jpg" alt="lemonade1" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кока-Кола середня</h3>
+						<p class="food-price">₴35</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/lemonade4.jpg" alt="lemonade2" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Фанта середня</h3>
+						<p class="food-price">₴35</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/lemonade7.jpg" alt="lemonade3" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Спрайт середній</h3>
+						<p class="food-price">₴35</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/lemonade10.jpg" alt="lemonade4" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Вода негазована</h3>
+						<p class="food-price">₴28</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/lemonade11.jpg" alt="lemonade5" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Вода слабогазована</h3>
+						<p class="food-price">₴30</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+					<div class="food-bl">
+						<img src="../img/lemonade2.jpg" alt="lemonade6" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кока-Кола маленька</h3>
+						<p class="food-price">₴25</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/lemonade5.jpg" alt="lemonade7" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Фанта маленька</h3>
+						<p class="food-price">₴25</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/lemonade8.jpg" alt="lemonade8" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Спрайт маленький</h3>
+						<p class="food-price">₴25</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/lemonade3.jpg" alt="lemonade9" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кока-Кола економ</h3>
+						<p class="food-price">₴15</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/lemonade6.jpg" alt="lemonade10" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Фанта економ</h3>
+						<p class="food-price">₴15</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/lemonade9.jpg" alt="lemonade11" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Спрайт економ</h3>
+						<p class="food-price">₴15</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+				</div>
+
+				<div class="food-slider-bl f-5" id="slider-bl">
+
+					<div class="food-bl">
+						<img src="../img/coffee1.jpg" alt="coffee1" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кава 'Лате'</h3>
+						<p class="food-price">₴35</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/coffee3.jpg" alt="coffee2" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кава 'Капучино'</h3>
+						<p class="food-price">₴32</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/coffee5.jpg" alt="coffee3" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кава 'Флет Вайт'</h3>
+						<p class="food-price">₴36</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/coffee8.jpg" alt="coffee4" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кава 'Американо'</h3>
+						<p class="food-price">₴33</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/coffee11.jpg" alt="coffee5" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кава 'Еспресо'</h3>
+						<p class="food-price">₴31</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+					<div class="food-bl">
+						<img src="../img/coffee2.jpg" alt="coffee6" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кава 'Лате' маленька</h3>
+						<p class="food-price">₴25</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/coffee4.jpg" alt="coffee7" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кава 'Капучино' маленька</h3>
+						<p class="food-price">₴22</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/coffee6.jpg" alt="coffee8" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кава 'Американо з молоком' класік</h3>
+						<p class="food-price">₴30</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/coffee7.jpg" alt="coffee9" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кава 'Американо з молоком' маленька</h3>
+						<p class="food-price">₴20</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/coffee9.jpg" alt="coffee10" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кава 'Американо' маленька</h3>
+						<p class="food-price">₴17</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+
+					<div class="food-bl">
+						<img src="../img/coffee10.jpg" alt="coffee11" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Кава подвійне еспресо</h3>
+						<p class="food-price">₴35</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+
+					<div class="food-bl">
+						<img src="../img/coffee12.jpg" alt="coffee12" class="slider-img">
+						<div class="stars">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+							<img src="../img/star.svg" alt="*">
+						</div>
+						<h3 class="food-title">Мокко класік</h3>
+						<p class="food-price">₴40</p>
+						<button class="food-btn btn">Купити</button>
+					</div>
+
+				</div>
+
+
+
+			</div> 
+
+
+		</div>
+	</div>
+
+</main>
+
+
+
+
+
+
+
+
+  
+<footer class="footer">
+	<div class="footer-list conteiner">
+		<div class="footer-item">
+			<a href="/" class="footer-label bb-0"><img src="../img/EFood.svg" alt="EFood"></a>
+			<ul class="footer-ul">
+				<li class="footer-li"><img src="../img/location.svg" alt="">Chernihiv, Ukraine</li>
+				<li class="footer-li"><img src="../img/phone.svg" alt="">+380666666666</li>
+				<li class="footer-li"><img src="../img/envelope.svg" alt="">support@efood.com</li>
+				<li class="footer-li">
+					<div class="massegers">
+						<a href="https://www.instagram.com/" target="_blank"><div class="instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></div></a>
+						<a href="https://www.facebook.com/" target="_blank"><div class="facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></div></a>
+						<a href="https://twitter.com/" target="_blank"><div class="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></i></div></a>
+						<a href="https://www.youtube.com/" target="_blank"><div class="youtube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></div></a>	
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-item item-1">
+			<input class="radio-btn" type="checkbox" id="radio-1" name="input-2"><label class="footer-label lb-1" for="radio-1"><p>Категорії:</p><img src="../img/plus.svg" alt=""></label>
+			<ul class="footer-ul ul-1">
+				<li class="footer-li"><img src="../img/burger.svg" alt="">Бургер</li>
+				<li class="footer-li"><img src="../img/pizza.svg" alt="">Піца</li>
+				<li class="footer-li"><img src="../img/sandwich.svg" alt="">Cендвіч</li>
+				<li class="footer-li"><img src="../img/lemonade.svg" alt="">Лимонад</li>
+				<li class="footer-li"><img src="../img/coffee.svg" alt="">Кава</li>
+			</ul>
+		</div>
+		<div class="footer-item item-2">
+			<input class="radio-btn" type="checkbox" id="radio-2" name="input-2"><label class="footer-label lb-2" for="radio-2"><p>Оплата:</p><img src="../img/plus.svg" alt=""></label>
+			<ul class="footer-ul ul-2">
+				<li class="footer-li">Готівкою</li>
+				<li class="footer-li">Банківською Карткою</li>
+				<li class="footer-li">Електронним Гаманцем</li>
+			</ul>
+		</div>
+		<div class="footer-item item-3">
+			<input class="radio-btn" type="checkbox" id="radio-3" name="input-2"><label class="footer-label lb-3" for="radio-3"><p>Доставка:</p><img src="../img/plus.svg" alt=""></label>
+			<ul class="footer-ul ul-3">
+				<li class="footer-li">Самовивіз</li>
+				<li class="footer-li">Кур'єром</li>
+				<li class="footer-li">Терміново кур'єром</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-copyright">
+  	<div class="copyright conteiner">
+    	<p class="footer-text">© 2022 Всі права захищені</p>
+    	<p class="footer-text">Коваль Віталій - Чернігівська ЗОШ 21</p>
+  	</div>
+	</div>
+</footer>
+</body>
